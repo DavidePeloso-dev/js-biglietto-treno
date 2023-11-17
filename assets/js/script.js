@@ -15,6 +15,16 @@ if (user_age < 18){
     tiket_discount = tiket_price * 40 / 100
 } else {tiket_discount = 0.00};
 
-const total_price = tiket_price - tiket_discount
+const total_price = tiket_price - tiket_discount;
 
 console.log(total_price.toFixed(2));
+
+document.getElementById('kilometers').innerHTML = kilometres + ' km';
+document.getElementById('age').innerHTML = user_age + ' years old';
+document.getElementById('tiket_price').innerHTML = tiket_price.toFixed(2) + ' \u20AC';
+document.getElementById('tiket_discount').innerHTML = '- ' + tiket_discount.toFixed(2) + ' \u20AC';
+document.getElementById('total_price').innerHTML = total_price.toFixed(2) + ' \u20AC';
+
+
+
+
